@@ -24,8 +24,15 @@ graph TB
   C_eth0 -->|Communicate| B_eth1
 ```
 
-Here is your solution:
+## Solution
 
-## Setup bridge on HOST_B
+### Setup bridge on HOST_B
+```bash
+git clone https://github.com/protogia/ubuntu-network-bridge.git
 
-## Add route to bridge on HOST C
+chmod +x ./ubuntu-network-bridge/setup_test_bridge.sh 
+./ubuntu-network-bridge/setup_test_bridge.sh
+# enter values ... 
+```
+
+### Add route to bridge on HOST C
