@@ -17,11 +17,13 @@ name=${name:-IF_A}
 read -p "Enter name of inteface b [eth1]:" IF_B
 name=${name:-IF_B}
 
+
+
 # read ips and cidrs for given interface-names
 IF_A_IP_AND_MASK=$(/sbin/ip -o -4 addr list $IF_A | awk '{print $4}' | cut -d/ -f1)
 IF_B_IP_AND_MASK=$(/sbin/ip -o -4 addr list $IF_B | awk '{print $4}' | cut -d/ -f1)
 
-# todo: get ip from $IF_A and $IF_B
+
 
 # print config-info
 echo "Your configuration: +++++++++++++++++++++++++++"
@@ -37,6 +39,7 @@ else
     echo "Bridge not implemented. Finished."
     exit(0)
 fi
+
 
 
 run_setup() {
