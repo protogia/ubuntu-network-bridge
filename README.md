@@ -3,6 +3,8 @@
 You want to connect two hosts **_A and C_** by bridging over a third host **_B_**?
 
 ```mermaid
+%%{init: {'theme': 'dark' } }%%
+
 graph TB
   subgraph HOST_A
     A_eth0[eth0]
